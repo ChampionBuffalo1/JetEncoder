@@ -1,0 +1,9 @@
+dist
+logs
+README.md
+.prettier*
+Dockerfile*
+node_modules
+.dockerignore
+docker-compose*
+npm-debug.log

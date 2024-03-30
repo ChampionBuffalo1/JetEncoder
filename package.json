@@ -1,0 +1,32 @@
+{
+  "name": "encoder",
+  "private": true,
+  "license": "AGPL-3.0",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node .",
+    "watch": "tsc -w --pretty",
+    "build": "rimraf dist && tsc",
+    "pretty": "prettier --write ./**/*.{js,ts} src/**/*.{js,ts}"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.540.0",
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.4.5",
+    "dotenv-safe": "^9.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "p-limit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/amqplib": "^0.10.5",
+    "@types/bun": "latest",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.3",
+    "zod": "^3.22.4"
+  }
+}
